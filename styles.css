@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --branco-principal: #ffffff;
-  --cinza-secundario: #c0c0c0;
+  --cinza-secundario: #f1f1f1;
   --botao: #167bf7;
-  --cor-de-fundo: #000000;
+  --cor-de-fonte: #000000;
 }
 
 body {
-  color: var(--cor-de-fundo);
+  color: var(--cor-de-fonte);
   font-family: "Roboto";
+  background: var(--cinza-secundario);
 }
 * {
   margin: 0;
@@ -30,8 +31,8 @@ body {
 
 .text {
   display: flex;
-  font-size: 2.2em;
-  align-items: center;
+  font-size: 2.2rem;
+  align-items: flex-start;
 }
 
 .image img {
@@ -44,11 +45,11 @@ body {
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Define 3 colunas de tamanho igual */
-  gap: 20px; /* Espaçamento entre os cards */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 .page-title {
-  color: #000000;
+  color: var(--cor-de-fonte);
 }
 
 .cards-section {
@@ -57,7 +58,7 @@ body {
 }
 
 .card {
-  background-color: #fff;
+  background-color: var(--branco-principal);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -75,14 +76,14 @@ body {
 }
 
 .card-content h3 {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: var(--cor-de-fundo);
 }
 
 .card-content p {
-  font-size: 16px;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: #333;
   margin-bottom: 10px;
@@ -93,7 +94,7 @@ body {
   padding: 10px 20px;
   border: 1px solid #e5e7eb;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
   color: #333;
@@ -103,7 +104,7 @@ body {
 .card-content a:hover {
   background-color: #1e40af;
   border-color: #1e40af;
-  color: #fff;
+  color: var(--branco-principal);
 }
 
 .container-pagination {
@@ -115,7 +116,7 @@ body {
   justify-content: center;
 }
 .page {
-  background-color: #e2e8f0;
+  background-color: #c5d4e9;
   margin: 0 4px;
   border-radius: 4px;
 }
@@ -125,7 +126,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 8px 16px;
-  font-size: 14px;
+  font-size: 1.2rem;
   text-decoration: none;
   color: #4b5563;
   border: 1px solid transparent;
@@ -135,17 +136,18 @@ body {
 }
 
 .pagination-link:hover {
-  background-color: #e2e8f0;
+  background-color: #0064e7;
+  color: var(--branco-principal);
 }
 
 .previous {
   background: linear-gradient(to right, #1e40af, #805ad5);
-  color: #fff;
+  color: var(--branco-principal);
   border-color: transparent;
 }
 
 .next {
   background: linear-gradient(to right, #1e40af, #805ad5);
-  color: #fff;
+  color: var(--branco-principal);
   border-color: transparent;
 }
