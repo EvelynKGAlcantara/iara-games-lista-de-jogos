@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --branco-principal: #ffffff;
+  --cinza-secundario: #c0c0c0;
+  --botao: #167bf7;
+  --cor-de-fundo: #000000;
+}
+
+body {
+  color: var(--cor-de-fundo);
+  font-family: "Roboto";
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.rainbow-text {
+  background: linear-gradient(to right, #ffcc66, #aad456, #004aad);
+  background-clip: text;
+  color: transparent;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  font-size: 2.2em;
+  align-items: center;
+}
+
+.image img {
+  display: flex;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Define 3 colunas de tamanho igual */
+  gap: 20px; /* Espaçamento entre os cards */
+}
+.page-title {
+  color: #000000;
+}
+
+.cards-section {
+  padding: 20px;
+  width: 100%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--cor-de-fundo);
+}
+
+.card-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.card-content a:hover {
+  background-color: #1e40af;
+  border-color: #1e40af;
+  color: #fff;
+}
+
+.container-pagination {
+  padding: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.page {
+  background-color: #e2e8f0;
+  margin: 0 4px;
+  border-radius: 4px;
+}
+
+.pagination-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #4b5563;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin: 0 4px;
+}
+
+.pagination-link:hover {
+  background-color: #e2e8f0;
+}
+
+.previous {
+  background: linear-gradient(to right, #1e40af, #805ad5);
+  color: #fff;
+  border-color: transparent;
+}
+
+.next {
+  background: linear-gradient(to right, #1e40af, #805ad5);
+  color: #fff;
+  border-color: transparent;
+}
